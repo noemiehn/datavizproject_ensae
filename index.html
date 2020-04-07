@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+#more {display: none;}
 </style>
 <body class="w3-light-grey">
 
@@ -25,24 +26,45 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
+  
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <h3><b>Popular words, part I</b></h3>
+    <h5>Choosing the right word to encapsulate your creative work <span class="w3-opacity">March 30, 2020</span></h5>
     <img src="images/title_words.png" alt="titles" style="width:100%">
     <div class="w3-container">
-      <h5>Choosing the right word to encapsulate your creative work <span class="w3-opacity">March 30, 2020</span></h5>
+      
     </div>
 
     <div class="w3-container">
       <p> La database étudiée regroupe des films sortis depuis la fin du 19e siècle. 
-        Nous avons voulu observer l’évolution des thèmes évoqués dans chacun des films, or le titre d’un film est en général évocateur du sujet traité.</p>
-       </p> Ainsi les mots qui reviennent le plus souvent sont Love, Man, Girl, Day et Night. Derrière, nous retrouvons des mots comme Dead, Death, Time, Story, Life, World. 
+        Nous avons voulu observer l’évolution des thèmes évoqués dans chacun des films, or le titre d’un film est en général évocateur du sujet trai<span id="dots">...</span><span id="more">té. Ainsi les mots qui reviennent le plus souvent sont Love, Man, Girl, Day et Night. Derrière, nous retrouvons des mots comme Dead, Death, Time, Story, Life, World. 
     Rares sont les films aux titres alambiqués et l’illustration ci-jointe illustre la relative simplicité des titres de films. 
-        Par chance nous bénéficions également de descriptions des films. Nous appliquons la même analyse à celles-ci. (slide suivante)
-</p>
+        Par chance nous bénéficions également de descriptions des films. Nous appliquons la même analyse à celles-ci. (post suivant)</span></p>
+
+        <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button onclick="myFunction()" id="myBtn" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -53,26 +75,35 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
   
   
+  
 
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <h3><b>Popular words, part II</b></h3>
+    <h5>Discovering the story behind a title <span class="w3-opacity">March 16, 2020</span></h5>
     <img src="images/words_summary.png" alt="summary" style="width:100%">
     <div class="w3-container">
       
-      <h5>Discovering the story behind a title <span class="w3-opacity">March 16, 2020</span></h5>
+      
     </div>
 
     <div class="w3-container">
-      </p> Si des mots comme « Life » restent importants, on remarque la présence beaucoup plus importantes de verbes d’actions dans les descriptions de films étudiés. 
-  Des verbes comme find, discover, become, live, work, begin sont prépondérants.  </p>
-   </p> Cela n’est pas vraiment étonnant: les films racontant en général l’histoire d’un héros ou d’une héroïne 
-  (à l’exception de productions indépendantes à visées plus expérimentales), l’importance de verbes ayant trait à un itinéraire (become et find) n’est pas choquante. </p> 
-   </p>Ce graphique montre que la majorité des films, ou en tout cas une grande partie, 
-  se fait l’illustration du voyage initiatique de son héros et de ses étapes: the coming of age movie.  </p> 
+      </p> Si des mots comme « Life »restent importants, on remarque la présence beaucoup plus importantes de verbes d’actions dans les descriptions de films étudiés. 
+  Des verbes comme find, discover, become, live, work, begin sont prépondérants.  
+  Cela n’est pas vraiment étonnant: les films racontant en général l’histoire d’un héros ou d’une héroïne 
+  (à l’exception de productions indépendantes à visées plus expérimentales), l’importance de verbes ayant trait à un itinéraire (become et find) n’est pas choquante. 
+  Ce graphique montre que la majorité des films, ou en tout cas une grande partie, 
+  se fait l’illustration du voyage initiatique de son héros et de ses étapes: the coming of age movie.
+
+  
+
+</body>
+</html>
+
+  
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button onclick="myFunction()" id="myBtn" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
@@ -86,7 +117,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <h3><b>Country production of movies</b></h3>
-      <h5>An international and european approach <span class="w3-opacity">March 27, 2020</span></h5>
+      <h5>International and European approaches <span class="w3-opacity">March 27, 2020</span></h5>
     <div class="w3-container">
  
     </div>
@@ -199,10 +230,23 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="images/lopate-empire-cinema.jpg" style="width:100%">
+  <img src="images/netflix.jpg" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>Our goal</b></h4>
-      <p>Netflix and chill has become a new common habit in our everyday lives. We had the opportunity to explore and analyze the MovieLens metadata on over 45 000 movies and 26 million ratings from over 270 000 users.</p>
+      <p>Netflix and chill has become a new common habit in our everyday lives. We had the opportunity to explore and analyze the MovieLens metadata on over 45 000 movies and 26 million ratings from over 270 000 users.
+      </p>
+
+      <p>You'll find below our latest posts resuming our main highlights on the topic.
+      </p>
+    </div>
+  </div><hr>
+
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/logo_ensae.png" style="width:75%">
+    <div class="w3-container w3-white">
+      <h4><b>Our team</b></h4>
+      <p>We are a group of five last-year students from Ensae Paristech in Palaiseau. </p>
     </div>
   </div><hr>
   

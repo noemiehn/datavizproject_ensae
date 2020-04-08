@@ -75,38 +75,23 @@ function myFunction() {
   <hr>
   
   
-  
 
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
     <h3><b>Popular words, part II</b></h3>
     <h5>Discovering the story behind a title <span class="w3-opacity">March 16, 2020</span></h5>
-    <img src="images/words_summary.png" alt="summary" style="width:100%">
+    <img src="images/words_summary.png" alt="summary" style="width:80%">
     <div class="w3-container">
-      
       
     </div>
 
     <div class="w3-container">
-      </p> Si des mots comme « Life »restent importants, on remarque la présence beaucoup plus importantes de verbes d’actions dans les descriptions de films étudiés. 
-  Des verbes comme find, discover, become, live, work, begin sont prépondérants.  
-  Cela n’est pas vraiment étonnant: les films racontant en général l’histoire d’un héros ou d’une héroïne 
-  (à l’exception de productions indépendantes à visées plus expérimentales), l’importance de verbes ayant trait à un itinéraire (become et find) n’est pas choquante. 
-  Ce graphique montre que la majorité des films, ou en tout cas une grande partie, 
-  se fait l’illustration du voyage initiatique de son héros et de ses étapes: the coming of age movie.
+      <p> <a href="page2.htm">Plus d'infos ici.</a></p>
 
-  
-
-</body>
-</html>
-
-  
       <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button onclick="myFunction()" id="myBtn" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
+
         <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-badge"></span></span></p>
+          <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-tag"></span></span></p>
         </div>
       </div>
     </div>
@@ -130,16 +115,34 @@ function myFunction() {
 
       
       <p> Sans surprise, la Grande-Bretagne est l’un des pays produisant le plus de films diffusés aux Etats-Unis : 
-        les deux pays partagent la même langues et souvent, les mêmes vedettes de cinéma.</p>
+        les deux pays partagent la même langues et souvent, les mêmes vedettes de ciné<span id="dots3">...</span><span id="more3">ma.</p>
         
        <p> Mais la France apparaît également en bonne position (voir ci-dessous). </p>
       
         <img src="images/european_map.png" alt="europe" style="width:100%">
 
+      <script>
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>  
+
      
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button onclick="myFunction3()" id="myBtn3" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b></b> <span class="w3-badge"></span></span></p>
@@ -168,7 +171,7 @@ function myFunction() {
     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~NoemieHpn/1.embed" height="525" width="100%"></iframe>
 
       <p>Le graphique ci-dessous montre que les documentaires sont générateurs de peu de revenus, ce qui n’est pas très étonnants, étant plus diffusés à la télévision ou sur internet. 
-      Les spectateurs leur attribuent des notes plus favorables qu’aux autres genres. </p>
+      Les spectateurs leur attribuent des notes plus favorables qu’aux autres genr<span id="dots4">...</span><span id="more4">es. </p>
 
       <p>Les films d’horreurs ont aussi leurs dévoués spectateurs et sont moins diffusés en cinéma 
       (bannis par la censure ou interdits aux moins de 16 ou 18 ans). 
@@ -178,9 +181,27 @@ function myFunction() {
 
       <p>Les films historiques ont historiquement eu à la fois la faveur de la critique et du public: du premier Jeanne d’Arc (Dreyer, 1922) à 1917 (Mendes, 2020), ceux-ci ont su durablement générer des revenus importants. Leur contenu historique leur assurant un certain sérieux, leur notation élevé par les spectateurs n’est pas surprenante. </p>
 
+      <script>
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          <p><button onclick="myFunction4()" id="myBtn4" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b> </b> <span class="w3-badge"></span></span></p>

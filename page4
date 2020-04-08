@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>Un regard économique</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+#more {display: none;}
+</style>
+<body>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Diving into genres</b></h1>
+  <p>Economic return and critical approach</p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s8">
+
+  <div class="w3-container">
+     
+    <p align="justify"> Avec internet, les spectateurs peuvent aussi noter les films qu’ils regardent — la critique n’a plus le privilège de faire la pluie et le beau temps en ce qui concerne les nouvelles sorties et les spectateurs ont aussi leur mot à dire sur le sujet. A ce sujet, il est intéressant de s’attarder sur les rapports entre revenus et notations des spectateurs. </p>
+
+    
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~NoemieHpn/1.embed" height="525" width="100%"></iframe>
+
+      <p align="justify">Le graphique ci-dessous montre que les documentaires sont générateurs de peu de revenus, ce qui n’est pas très étonnants, étant plus diffusés à la télévision ou sur internet. 
+      Les spectateurs leur attribuent des notes plus favorables qu’aux autres genr<span id="dots4">...</span><span id="more4">es. </p>
+
+      <p align="justify">Les films d’horreurs ont aussi leurs dévoués spectateurs et sont moins diffusés en cinéma 
+      (bannis par la censure ou interdits aux moins de 16 ou 18 ans). 
+      Ainsi, la différence entre revenus – faible – et notation – relativement plus haute – est justifiée: 
+      ce sont les afficionnados de cinéma d’horreur qui, en général, se rendent au cinéma pour regarder ces films. 
+      Des exceptions existent cependant: The Blair Witch Project, Paranormal Activity. </p>
+
+      <p align="justify">Les films historiques ont historiquement eu à la fois la faveur de la critique et du public: du premier Jeanne d’Arc (Dreyer, 1922) à 1917 (Mendes, 2020), ceux-ci ont su durablement générer des revenus importants. Leur contenu historique leur assurant un certain sérieux, leur notation élevé par les spectateurs n’est pas surprenante.
+      </span></p>
+</div>
+  <h4><b><a href="index.html">Retour au menu principal</a></b></h4>
+
+
+      
+     
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b></b> <span class="w3-badge"></span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
